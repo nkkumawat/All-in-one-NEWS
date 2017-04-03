@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonu.info.sources">
+
+    <ImageView
+        android:id="@+id/toi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/outline"
+        app:srcCompat="@drawable/toi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/bbc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/outline"
+        app:srcCompat="@drawable/bbc"
+        android:layout_alignTop="@+id/toi"
+        android:layout_toEndOf="@+id/toi" />
+
+    <ImageView
+        android:id="@+id/espn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/bbc"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/bbc"
+        android:background="@drawable/outline"
+        app:srcCompat="@drawable/espn" />
+
+    <ImageView
+        android:id="@+id/mtv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/outline"
+        android:padding="2dp"
+        app:srcCompat="@drawable/mtv"
+        android:layout_below="@+id/toi"
+        android:layout_alignStart="@+id/toi" />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/outline"
+        app:srcCompat="@drawable/time"
+        android:layout_alignTop="@+id/mtv"
+        android:layout_alignStart="@+id/bbc" />
+
+    <ImageView
+        android:id="@+id/thu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/espn"
+        android:layout_alignTop="@+id/time"
+        android:background="@drawable/outline"
+        android:padding="2dp"
+        app:srcCompat="@drawable/thu" />
+
+    <ImageView
+        android:id="@+id/bbcs"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/outline"
+        android:padding="2dp"
+        app:srcCompat="@drawable/bbcs"
+        android:layout_below="@+id/mtv"
+        android:layout_alignStart="@+id/mtv" />
+
+    <ImageView
+        android:id="@+id/cnn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/time"
+        android:layout_alignTop="@+id/bbcs"
+        android:background="@drawable/outline"
+        app:srcCompat="@drawable/cnn" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/thu"
+        android:layout_alignTop="@+id/cnn"
+        android:background="@drawable/outline"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/netg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/bbcs"
+        android:layout_below="@+id/bbcs"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/outline"
+        app:srcCompat="@drawable/netg" />
+
+    <ImageView
+        android:id="@+id/cnbc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/cnn"
+        android:layout_alignTop="@+id/netg"
+        android:background="@drawable/outline"
+        android:padding="3dp"
+        app:srcCompat="@drawable/cnbc" />
+</RelativeLayout>
